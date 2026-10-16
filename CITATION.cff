@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you cite this catalogue, please use the metadata below."
+title: silent-pass-catalogue
+abstract: "Each case here is a check that reported success after the property it was meant to establish had already failed, with a public reproducer and an upstream acknowledgement or an independent oracle."
+authors:
+  - family-names: Smith
+    given-names: Warren
+version: 0.1.0
+date-released: 2026-10-16
+repository-code: "https://github.com/repowazdogz-droid/silent-pass-catalogue"
+license: MIT
+type: dataset

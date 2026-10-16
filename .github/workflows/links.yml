@@ -1,0 +1,23 @@
+name: links
+
+# Every reproducer and reference link in the catalogue must resolve.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress README.md APPENDIX_unconfirmed.md
+          fail: true
